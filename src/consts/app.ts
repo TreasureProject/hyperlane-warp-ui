@@ -7,7 +7,7 @@ export const MAIN_FONT = SpaceGrotesk({
   preload: true,
   fallback: ['sans-serif'],
 });
-export const APP_NAME = 'Treasure Warp UI';
+export const APP_NAME = 'Treasure Warp';
 export const APP_DESCRIPTION = 'A DApp for Treasure Warp Route transfers';
 export const APP_URL = 'hyperlane-warp-template.vercel.app';
 export const BRAND_COLOR = Color.red;
