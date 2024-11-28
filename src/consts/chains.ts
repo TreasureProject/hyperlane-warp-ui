@@ -5,6 +5,7 @@ import {
   solanamainnetAddresses,
 } from '@hyperlane-xyz/registry';
 import { ChainMap, ChainMetadata } from '@hyperlane-xyz/sdk';
+import { ProtocolType } from '@hyperlane-xyz/utils';
 
 // A map of chain names to ChainMetadata
 // Chains can be defined here, in chains.json, or in chains.yaml
@@ -23,6 +24,16 @@ export const chains: ChainMap<ChainMetadata & { mailbox?: Address }> = {
   eclipsemainnet: {
     ...eclipsemainnet,
     mailbox: eclipsemainnetAddresses.mailbox,
+  },
+  treasuretopaz: {
+    protocol: ProtocolType.Ethereum,
+    chainId: 978658,
+    domainId: 978658,
+    name: 'treasuretopaz',
+    displayName: 'Treasure Topaz',
+    nativeToken: { name: 'MAGIC', symbol: 'TOPAZ', decimals: 18 },
+    rpcUrls: [{ http: 'https://rpc.topaz.treasure.lol' }],
+    logoURI: '/logos/Treasure_Testnet_Topaz_Icon.svg',
   },
   // mycustomchain: {
   //   protocol: ProtocolType.Ethereum,

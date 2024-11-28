@@ -11,6 +11,7 @@ export const warpRouteConfigs: WarpCoreConfig = {
       decimals: 18,
       symbol: 'MAGIC',
       name: 'MAGIC',
+      logoURI: '/logos/magic.svg',
       addressOrDenom: '0x5a6f771Af6C395a9C1765AE1cF26aec4FC178683',
       collateralAddressOrDenom: '0xe2faac0d4fd98a9b2275e5acd90d81fa0b6a4436',
       connections: [
@@ -25,6 +26,7 @@ export const warpRouteConfigs: WarpCoreConfig = {
       decimals: 18,
       symbol: 'MAGIC',
       name: 'MAGIC',
+      logoURI: '/logos/magic.svg',
       addressOrDenom: '0xae8D8A869bd5C6d9b8DD2EBEe2891b0313243211',
       connections: [
         {
